@@ -8,6 +8,6 @@ We have selected 5 ecological journals with the top impact scores in the field:
 4. **Proceedings of the Royal Society B: Biological Sciences**
 5. **Ecological Indicators**
 
-We collected data on articles published from 2013- present using webscraping algorithms specific to the webpage structure of each journal. 
+We are collecting data from Crossref's API, which allows for filtering of results based on criteria such as keywords and publication date. 
 
 ## Natural Language Processing
