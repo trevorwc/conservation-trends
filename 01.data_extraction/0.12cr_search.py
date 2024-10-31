@@ -7,7 +7,7 @@ import json
 
 # === Helper Functions =======
 cr = Crossref()
-
+"""
 # Get all articles from GCB
 res = cr.works(cursor = "*", 
                limit = 100, 
@@ -24,8 +24,8 @@ ecology_prompt = [item for batch in res for item in batch['message']['items']]
 
 with open('gcb_articles.json', 'w') as f:
     json.dump(ecology_prompt, f, indent=4)
-"""
-"""
+
+
 # Get all articles related to conservation 
 res = cr.works(query = "conservation",
                 cursor = "*", 
@@ -61,3 +61,4 @@ cons_prompt = [item for batch in res for item in batch['message']['items']]
 
 with open('conservation_articles.json', 'w') as f:
     json.dump(cons_prompt, f, indent=4)
+"""
