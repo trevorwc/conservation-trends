@@ -1,0 +1,218 @@
+{
+    "labels": [
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+    ],
+    "datasets": [
+        {
+            "label": "0_pollinator_pollination_pollinators_pollen",
+            "data": [
+                45,
+                64,
+                78,
+                84,
+                74,
+                86,
+                86,
+                84,
+                170,
+                151,
+                151,
+                125
+            ],
+            "backgroundColor": "rgba(75, 192, 192, 0.2)",
+            "borderColor": "rgba(75, 192, 192, 1)",
+            "borderWidth": 1
+        },
+        {
+            "label": "1_fire_fires_fuel_severity",
+            "data": [
+                40,
+                46,
+                53,
+                33,
+                22,
+                38,
+                47,
+                66,
+                97,
+                98,
+                129,
+                121
+            ],
+            "backgroundColor": "rgba(75, 192, 192, 0.2)",
+            "borderColor": "rgba(75, 192, 192, 1)",
+            "borderWidth": 1
+        },
+        {
+            "label": "2_herbivory_herbivore_herbivores_plant",
+            "data": [
+                33,
+                33,
+                45,
+                41,
+                48,
+                39,
+                48,
+                57,
+                55,
+                61,
+                58,
+                42
+            ],
+            "backgroundColor": "rgba(75, 192, 192, 0.2)",
+            "borderColor": "rgba(75, 192, 192, 1)",
+            "borderWidth": 1
+        },
+        {
+            "label": "3_fishing_fisheries_catch_fishery",
+            "data": [
+                24,
+                28,
+                29,
+                25,
+                27,
+                31,
+                37,
+                35,
+                47,
+                55,
+                56,
+                50
+            ],
+            "backgroundColor": "rgba(75, 192, 192, 0.2)",
+            "borderColor": "rgba(75, 192, 192, 1)",
+            "borderWidth": 1
+        },
+        {
+            "label": "4_salmon_trout_fish_river",
+            "data": [
+                37,
+                38,
+                26,
+                35,
+                38,
+                44,
+                40,
+                37,
+                35,
+                32,
+                30,
+                39
+            ],
+            "backgroundColor": "rgba(75, 192, 192, 0.2)",
+            "borderColor": "rgba(75, 192, 192, 1)",
+            "borderWidth": 1
+        },
+        {
+            "label": "5_invasive_invasion_native_alien",
+            "data": [
+                23,
+                26,
+                36,
+                36,
+                37,
+                36,
+                36,
+                36,
+                56,
+                33,
+                44,
+                29
+            ],
+            "backgroundColor": "rgba(75, 192, 192, 0.2)",
+            "borderColor": "rgba(75, 192, 192, 1)",
+            "borderWidth": 1
+        },
+        {
+            "label": "6_remote sensing_sensing_remote_spectral",
+            "data": [
+                5,
+                11,
+                12,
+                14,
+                25,
+                31,
+                33,
+                42,
+                50,
+                65,
+                72,
+                39
+            ],
+            "backgroundColor": "rgba(75, 192, 192, 0.2)",
+            "borderColor": "rgba(75, 192, 192, 1)",
+            "borderWidth": 1
+        },
+        {
+            "label": "7_ha_yield_kg_kg ha",
+            "data": [
+                0,
+                1,
+                2,
+                0,
+                6,
+                3,
+                13,
+                16,
+                10,
+                70,
+                148,
+                93
+            ],
+            "backgroundColor": "rgba(75, 192, 192, 0.2)",
+            "borderColor": "rgba(75, 192, 192, 1)",
+            "borderWidth": 1
+        },
+        {
+            "label": "8_seed_seeds_dispersal_seed dispersal",
+            "data": [
+                25,
+                23,
+                24,
+                29,
+                22,
+                24,
+                23,
+                24,
+                22,
+                28,
+                25,
+                23
+            ],
+            "backgroundColor": "rgba(75, 192, 192, 0.2)",
+            "borderColor": "rgba(75, 192, 192, 1)",
+            "borderWidth": 1
+        },
+        {
+            "label": "10_sperm_males_mating_male",
+            "data": [
+                16,
+                11,
+                16,
+                13,
+                22,
+                21,
+                27,
+                26,
+                34,
+                33,
+                18,
+                20
+            ],
+            "backgroundColor": "rgba(75, 192, 192, 0.2)",
+            "borderColor": "rgba(75, 192, 192, 1)",
+            "borderWidth": 1
+        }
+    ]
+}
