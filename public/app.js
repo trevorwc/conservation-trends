@@ -1,6 +1,4 @@
 
-// Make the top 10 most popular chart
-
 // Define color palette 
 const colorPalette = [
   'rgba(75, 192, 192, 0.6)',
@@ -15,7 +13,7 @@ const colorPalette = [
   'rgba(40, 167, 69, 0.6)'
 ];
 
-fetch('data/plt_count_by_year.json')
+fetch('data/pretty_plt_count_by_year.json')
   .then(response => response.json())
   .then(data => {
     // Access labels and datasets directly from the data object
@@ -45,8 +43,31 @@ fetch('data/plt_count_by_year.json')
       options: {
         responsive: true,
         scales: {
-          x: { stacked: true },
-          y: { beginAtZero: true, stacked: true }
+          x: {
+            stacked: true,
+            title: {
+              display: true,
+              text: 'Year', // Custom x-axis label
+              font: {
+                size: 14, // Font size for x-axis label
+                weight: 'bold'
+              },
+              padding: { top: 10 }
+            }
+          },
+          y: {
+            beginAtZero: true,
+            stacked: true,
+            title: {
+              display: true,
+              text: 'Number of articles', // Custom y-axis label
+              font: {
+                size: 14, // Font size for y-axis label
+                weight: 'bold'
+              },
+              padding: { bottom: 10 }
+            }
+          }
         },
         plugins: {
           legend: { display: true }
@@ -56,7 +77,7 @@ fetch('data/plt_count_by_year.json')
   })
   .catch(error => console.error('Error loading JSON:', error));
 
-fetch('data/plt_name_year_counts.json')
+fetch('data/pretty_plt_name_year_counts.json')
   .then(response => response.json())
   .then(data => {
     const labels = data.labels;
@@ -82,7 +103,31 @@ fetch('data/plt_name_year_counts.json')
       options: {
         responsive: true,
         scales: {
-          y: { beginAtZero: true }
+          x: {
+            stacked: true,
+            title: {
+              display: true,
+              text: 'Year', 
+              font: {
+                size: 14, 
+                weight: 'bold'
+              },
+              padding: { top: 10 }
+            }
+          },
+          y: {
+            beginAtZero: true,
+            stacked: true,
+            title: {
+              display: true,
+              text: 'Number of articles',
+              font: {
+                size: 14,
+                weight: 'bold'
+              },
+              padding: { bottom: 10 }
+            }
+          }
         },
         plugins: {
           legend: { display: true }
@@ -107,5 +152,99 @@ fetch('data/plt_name_year_counts.json')
       }
       chart.update(); // Refresh the chart to show the selected data
     });
+  })
+  .catch(error => console.error('Error loading JSON:', error));
+
+
+  // Change chart
+  // Fetch the JSON data
+fetch('data/pretty_change.json')
+.then(response => response.json())
+  .then(data => {
+    // Sort datasets by relative_change in descending order
+    const allDatasets = data.datasets.sort((a, b) => b.relative_change - a.relative_change);
+    const checkboxContainer = document.getElementById('multiLabelDropdown');
+    const searchInput = document.getElementById('searchInput');
+
+    // Track which items are checked
+    const checkedStates = new Set();
+
+    // Function to render checkboxes based on a filtered list
+    function renderCheckboxes(filteredDatasets) {
+      checkboxContainer.innerHTML = ''; // Clear existing checkboxes
+
+      filteredDatasets.forEach((dataset, index) => {
+        const checkboxLabel = document.createElement('label');
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.value = dataset.label; // Store label as unique identifier
+        checkbox.checked = checkedStates.has(dataset.label); // Set checked state based on memory
+        checkboxLabel.appendChild(checkbox);
+        checkboxLabel.appendChild(document.createTextNode(dataset.label));
+        checkboxContainer.appendChild(checkboxLabel);
+        checkboxContainer.appendChild(document.createElement('br'));
+
+        // Attach event listener to track checked items
+        checkbox.addEventListener('change', function () {
+          if (checkbox.checked) {
+            checkedStates.add(dataset.label);
+          } else {
+            checkedStates.delete(dataset.label);
+          }
+          updateChart(); // Update chart when a checkbox is toggled
+        });
+      });
+    }
+
+    // Initial render with all datasets
+    renderCheckboxes(allDatasets);
+
+    // Event listener to filter checkboxes as user types in the search box
+    searchInput.addEventListener('input', () => {
+      const searchText = searchInput.value.toLowerCase();
+      const filteredDatasets = allDatasets.filter(dataset =>
+        dataset.label.toLowerCase().includes(searchText)
+      );
+      renderCheckboxes(filteredDatasets); // Render only for filtered items
+    });
+
+    // Set up the initial chart (empty)
+    const ctx = document.getElementById('relativeChangeChart').getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: [],
+        datasets: [{
+          label: 'Relative Change',
+          data: [],
+          backgroundColor: 'rgba(75, 192, 192, 0.6)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        scales: {
+          x: { beginAtZero: true },
+          y: { beginAtZero: true }
+        },
+        plugins: {
+          legend: { display: false }
+        }
+      }
+    });
+
+    // Function to update chart based on checked boxes
+    function updateChart() {
+      // Only use datasets corresponding to checked labels
+      const selectedDatasets = allDatasets.filter(dataset => checkedStates.has(dataset.label));
+
+      // Update chart labels and data
+      chart.data.labels = selectedDatasets.map(dataset => dataset.label);
+      chart.data.datasets[0].data = selectedDatasets.map(dataset => dataset.relative_change);
+
+      chart.update(); // Refresh the chart with new data
+    }
   })
   .catch(error => console.error('Error loading JSON:', error));

@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+      padding-bottom: 50px; /* Adjust as needed */
+    }
+    </style>
 </head>    
 
 <body>
@@ -47,15 +52,27 @@
             <p>
                 The field of conservation science has itself become increasingly diverse. 
                 In addition to the canonical conservationists collecting samples in remote landscapes,
-                advances in cellular biology <b> is this is the right word? </b> as well as computational
+                advances in cellular biology as well as computational
                 power and techniques means that scientists have an increasing number of tools at their disposal.
             </p>
             <p>
-                The results of this analysis shows that scientific interest in conservation has been 
-                increasing in recent years, after a period of relative stability. 
+                We assessed yearly trends the topics of scientific papers through an analysis of their abstracts. After
+                accessing 81,958 journal abstracts related to the keyword "conservation" since 2013, we filtered to those
+                published in 85 "disciplinary journals," which we defined as those with more than 100 articles related to conservation,
+                leaving us with 68,065 abstracts. The model classified the abstracts into 667 topics. Nearly half of the abstracts fit
+                the "intercept" term that can be thought of as unclassified or too difficult to classify. 
             </p>
             <p>
-                The most popular topics in conservation science over the past decade can be seen below.
+                In order to ensure that we were only accessing the highest quality data, we only performed subsequent 
+                analysis on those topics that had more than 100 articles, then filtered to those with more than 50% probability 
+                of being in their assigned class. This left us with 13,661 abstracts remaining. 
+            </p>
+            <p>
+                The top 10 topics can be visualized in the histogram below. 
+            </p>
+            <p>
+                Some notable trends stick out, including the increase in reserach about fires, agricultural yields, 
+                and pollinators. 
             </p>
         </div>
         <!-- Top 10 Popular Topics Bar Chart container -->
@@ -63,6 +80,11 @@
             <canvas id="popular10Chart" width="400" height="200"></canvas>
         </div>
         <div class="row justify-content-start" style="max-width: 800px; margin: auto; text-align: justify;">
+            <p>
+                Still, the large differences in total count between different topics can obscure trends, so 
+                it might be more informative to look at a single topic over time. We visualized those trends 
+                in the following interactive line chart. 
+            </p>
             <p>
                 To look at the trend in a specific topic over time, select a topic below. 
             </p>
@@ -74,6 +96,30 @@
                 <option value="">Select</option>
             </select>
             <canvas id="lineChart" width="400" height="200"></canvas>
+        </div>
+        <div class="row justify-content-start" style="max-width: 800px; margin: auto; text-align: justify;">
+            <p>
+                We were also interested in seeing which topics have become relative more or less popular throughout the years.
+                Therefore, we calculated the relative change in the number of articles published on a toppic relative to the
+                average of the first three years of the dataset.
+            </p>
+            <p>In order to allow for easy visual comparison, topics that have increased or decreased by more than 10x 
+                have been truncated. 
+            </p>
+        </div>
+        <canvas id="relativeChangeChart"></canvas>
+        <div id="multiLabelDropdownContainer", style = "max-height: 200px; max-width: 800px; overflow-y: auto; border: 1px solid #ccc;  padding: 5px;">
+            <label for="searchInput">Search Labels:</label>
+              <input type="text" id="searchInput" placeholder="Type to search...">
+            <div id="multiLabelDropdown"></div>
+        </div>
+        <div class="row justify-content-start" style="max-width: 800px; margin: auto; text-align: justify;">
+            <p>
+                We see that the five topics that have seemingly fallen out of favor are related to working conditions,
+                demography, queens/workers, health care, and the genetics of salmon and trout. 
+                This points to a potenital limitation of the model, as the meaning of queens, workers, and colony most
+                likely relate to pollinators, but these articles were not included in the pollinators category. 
+            </p>
         </div>
     </div>
     <!-- Load app.js -->

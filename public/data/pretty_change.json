@@ -1,0 +1,1457 @@
+{
+    "labels": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+    ],
+    "datasets": [
+        {
+            "label": "1 Pollinator, Pollination, Pollinators, Pollen",
+            "data": [
+                64,
+                78,
+                84,
+                74,
+                86,
+                86,
+                84,
+                170,
+                151,
+                151,
+                125
+            ],
+            "cumulative": 80.0,
+            "relative_change": 1.2834224598930482
+        },
+        {
+            "label": "10 Gut, Microbiota, Microbiome, Gut Microbiota",
+            "data": [
+                2,
+                3,
+                3,
+                7,
+                7,
+                10,
+                17,
+                23,
+                28,
+                30,
+                17
+            ],
+            "cumulative": 16.0,
+            "relative_change": 8.0
+        },
+        {
+            "label": "11 Sperm, Males, Mating, Male",
+            "data": [
+                11,
+                16,
+                13,
+                22,
+                21,
+                27,
+                26,
+                34,
+                33,
+                18,
+                20
+            ],
+            "cumulative": 4.0,
+            "relative_change": 0.27906976744186046
+        },
+        {
+            "label": "12 Litter, Decomposition, Litter Decomposition, Leaf Litter",
+            "data": [
+                8,
+                9,
+                7,
+                13,
+                11,
+                12,
+                15,
+                17,
+                24,
+                11,
+                12
+            ],
+            "cumulative": 7.0,
+            "relative_change": 0.9545454545454546
+        },
+        {
+            "label": "13 Males, Social, Females, Pair",
+            "data": [
+                6,
+                13,
+                6,
+                5,
+                18,
+                32,
+                34,
+                31,
+                43,
+                25,
+                19
+            ],
+            "cumulative": 2.0,
+            "relative_change": 0.16666666666666666
+        },
+        {
+            "label": "14 Fish, Fish Assemblages, River, Assemblages",
+            "data": [
+                17,
+                12,
+                10,
+                16,
+                12,
+                24,
+                18,
+                28,
+                37,
+                23,
+                27
+            ],
+            "cumulative": 8.0,
+            "relative_change": 0.5
+        },
+        {
+            "label": "15 Adsorption, Sorption, Ions, Wastewater",
+            "data": [
+                1,
+                1,
+                2,
+                0,
+                9,
+                22,
+                22,
+                18,
+                53,
+                38,
+                25
+            ],
+            "cumulative": 25.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "16 Mycorrhizal, Amf, Fungi, Fungal",
+            "data": [
+                10,
+                10,
+                12,
+                15,
+                17,
+                9,
+                17,
+                20,
+                20,
+                21,
+                27
+            ],
+            "cumulative": 18.0,
+            "relative_change": 1.8620689655172415
+        },
+        {
+            "label": "17 Water, Water Quality, Quality, Drinking",
+            "data": [
+                3,
+                0,
+                5,
+                6,
+                3,
+                4,
+                11,
+                8,
+                43,
+                28,
+                17
+            ],
+            "cumulative": 17.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "18 Air, Pollution, Air Pollution, Air Quality",
+            "data": [
+                0,
+                1,
+                3,
+                4,
+                3,
+                7,
+                5,
+                11,
+                33,
+                18,
+                15
+            ],
+            "cumulative": 15.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "19 Microbial, Soil, Bacterial, Soil Microbial",
+            "data": [
+                8,
+                11,
+                8,
+                16,
+                6,
+                11,
+                27,
+                37,
+                34,
+                22,
+                16
+            ],
+            "cumulative": 11.0,
+            "relative_change": 1.375
+        },
+        {
+            "label": "2 Fire, Fires, Fuel, Severity",
+            "data": [
+                46,
+                53,
+                33,
+                22,
+                38,
+                47,
+                66,
+                97,
+                98,
+                129,
+                121
+            ],
+            "cumulative": 81.0,
+            "relative_change": 1.7482014388489209
+        },
+        {
+            "label": "20 Restoration, Ecological Restoration, Projects, Restoration Projects",
+            "data": [
+                5,
+                4,
+                9,
+                6,
+                8,
+                7,
+                8,
+                11,
+                15,
+                7,
+                7
+            ],
+            "cumulative": 2.0,
+            "relative_change": 0.42857142857142855
+        },
+        {
+            "label": "21 Edna, Environmental Dna, Dna, Dna Edna",
+            "data": [
+                8,
+                12,
+                21,
+                14,
+                16,
+                18,
+                16,
+                25,
+                24,
+                15,
+                18
+            ],
+            "cumulative": 15.0,
+            "relative_change": 1.9565217391304348
+        },
+        {
+            "label": "22 Leopard, Lions, Lion, Carnivores",
+            "data": [
+                2,
+                8,
+                9,
+                5,
+                17,
+                15,
+                18,
+                19,
+                22,
+                30,
+                37
+            ],
+            "cumulative": 31.0,
+            "relative_change": 5.8125
+        },
+        {
+            "label": "23 Ant, Ants, Ant Species, Efn",
+            "data": [
+                14,
+                11,
+                12,
+                15,
+                10,
+                22,
+                18,
+                20,
+                17,
+                13,
+                12
+            ],
+            "cumulative": 1.0,
+            "relative_change": 0.08333333333333333
+        },
+        {
+            "label": "24 Seed, Restoration, Seeding, Native",
+            "data": [
+                6,
+                9,
+                10,
+                21,
+                12,
+                16,
+                22,
+                25,
+                18,
+                20,
+                23
+            ],
+            "cumulative": 21.0,
+            "relative_change": 3.705882352941176
+        },
+        {
+            "label": "25 Transmission, Disease, Virus, Rabies",
+            "data": [
+                3,
+                9,
+                9,
+                19,
+                16,
+                24,
+                27,
+                23,
+                17,
+                15,
+                13
+            ],
+            "cumulative": 5.0,
+            "relative_change": 0.75
+        },
+        {
+            "label": "26 Movement, Animal, Animal Movement, Gps",
+            "data": [
+                16,
+                11,
+                15,
+                8,
+                12,
+                15,
+                10,
+                25,
+                25,
+                20,
+                17
+            ],
+            "cumulative": 8.0,
+            "relative_change": 0.6666666666666666
+        },
+        {
+            "label": "27 Acoustic, Recordings, Sound, Soundscape",
+            "data": [
+                4,
+                5,
+                7,
+                3,
+                14,
+                16,
+                13,
+                20,
+                26,
+                26,
+                21
+            ],
+            "cumulative": 19.0,
+            "relative_change": 5.181818181818182
+        },
+        {
+            "label": "28 Migration, Migratory, Breeding, Migrants",
+            "data": [
+                6,
+                6,
+                12,
+                8,
+                11,
+                10,
+                16,
+                26,
+                28,
+                22,
+                23
+            ],
+            "cumulative": 19.0,
+            "relative_change": 3.5625
+        },
+        {
+            "label": "29 Macroinvertebrate, Beta Diversity, Beta, Metacommunity",
+            "data": [
+                7,
+                7,
+                8,
+                11,
+                7,
+                7,
+                18,
+                30,
+                23,
+                24,
+                24
+            ],
+            "cumulative": 19.0,
+            "relative_change": 3.0
+        },
+        {
+            "label": "3 Herbivory, Herbivore, Herbivores, Plant",
+            "data": [
+                33,
+                45,
+                41,
+                48,
+                39,
+                48,
+                57,
+                55,
+                61,
+                58,
+                42
+            ],
+            "cumulative": 9.0,
+            "relative_change": 0.24324324324324326
+        },
+        {
+            "label": "30 Land, Ecological, Land Use, Habitat Quality",
+            "data": [
+                1,
+                0,
+                1,
+                1,
+                0,
+                7,
+                3,
+                5,
+                30,
+                41,
+                32
+            ],
+            "cumulative": 32.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "31 Phage, Microbial, Plasmid, Bacteria",
+            "data": [
+                3,
+                4,
+                6,
+                10,
+                6,
+                13,
+                16,
+                21,
+                19,
+                16,
+                10
+            ],
+            "cumulative": 4.0,
+            "relative_change": 0.9230769230769231
+        },
+        {
+            "label": "32 Queens, Workers, Queen, Colony",
+            "data": [
+                2,
+                4,
+                4,
+                7,
+                5,
+                9,
+                10,
+                14,
+                13,
+                8,
+                5
+            ],
+            "cumulative": -4.0,
+            "relative_change": -0.8
+        },
+        {
+            "label": "33 Turtles, Turtle, Nesting, Loggerhead",
+            "data": [
+                9,
+                3,
+                6,
+                5,
+                8,
+                6,
+                8,
+                9,
+                16,
+                20,
+                18
+            ],
+            "cumulative": 10.0,
+            "relative_change": 1.5
+        },
+        {
+            "label": "34 Mangrove, Mangroves, Mangrove Forests, Coastal",
+            "data": [
+                7,
+                5,
+                8,
+                6,
+                15,
+                12,
+                5,
+                23,
+                34,
+                24,
+                16
+            ],
+            "cumulative": 14.0,
+            "relative_change": 3.0
+        },
+        {
+            "label": "35 Corals, Coral, Symbiodinium, Symbiodiniaceae",
+            "data": [
+                13,
+                10,
+                9,
+                7,
+                12,
+                14,
+                18,
+                27,
+                12,
+                8,
+                14
+            ],
+            "cumulative": 1.0,
+            "relative_change": 0.08333333333333333
+        },
+        {
+            "label": "36 Diapause, Temperature, Thermal, Temperatures",
+            "data": [
+                12,
+                12,
+                8,
+                11,
+                7,
+                17,
+                14,
+                20,
+                20,
+                16,
+                11
+            ],
+            "cumulative": 3.0,
+            "relative_change": 0.28125
+        },
+        {
+            "label": "37 Lt Em, Em Gt, Em, Lt",
+            "data": [
+                3,
+                2,
+                6,
+                14,
+                7,
+                13,
+                10,
+                11,
+                22,
+                20,
+                26
+            ],
+            "cumulative": 23.0,
+            "relative_change": 8.625
+        },
+        {
+            "label": "38 Energy, Power, X0d, Electricity",
+            "data": [
+                0,
+                0,
+                0,
+                0,
+                2,
+                1,
+                15,
+                17,
+                32,
+                60,
+                25
+            ],
+            "cumulative": 25.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "39 Fire, Severity, Burnt, Unburnt",
+            "data": [
+                4,
+                3,
+                3,
+                2,
+                4,
+                8,
+                2,
+                18,
+                11,
+                15,
+                11
+            ],
+            "cumulative": 8.0,
+            "relative_change": 2.4
+        },
+        {
+            "label": "4 Fishing, Fisheries, Catch, Fishery",
+            "data": [
+                28,
+                29,
+                25,
+                27,
+                31,
+                37,
+                35,
+                47,
+                55,
+                56,
+                50
+            ],
+            "cumulative": 26.0,
+            "relative_change": 0.9629629629629629
+        },
+        {
+            "label": "40 Song, Noise, Songs, Vocal",
+            "data": [
+                2,
+                1,
+                5,
+                9,
+                7,
+                21,
+                15,
+                25,
+                22,
+                28,
+                12
+            ],
+            "cumulative": 8.0,
+            "relative_change": 3.4285714285714284
+        },
+        {
+            "label": "41 Occupancy, Detection, Sampling, Models",
+            "data": [
+                9,
+                14,
+                8,
+                14,
+                10,
+                16,
+                8,
+                11,
+                12,
+                14,
+                20
+            ],
+            "cumulative": 8.0,
+            "relative_change": 0.6857142857142857
+        },
+        {
+            "label": "42 Per Plant, Yield, Yield Per, Genotypes",
+            "data": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                2,
+                5,
+                4,
+                16,
+                59,
+                37
+            ],
+            "cumulative": 37.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "43 \u041d\u0430, \u041f\u043e, \u0414\u043b\u044f, \u0427\u0442\u043e",
+            "data": [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                30,
+                10,
+                8
+            ],
+            "cumulative": 6.0,
+            "relative_change": 9.0
+        },
+        {
+            "label": "44 Dung, Beetle, Dung Beetle, Beetles",
+            "data": [
+                4,
+                11,
+                7,
+                9,
+                9,
+                7,
+                12,
+                15,
+                24,
+                25,
+                13
+            ],
+            "cumulative": 10.0,
+            "relative_change": 1.6666666666666667
+        },
+        {
+            "label": "45 Lt Em, Em Gt, Em, New Species",
+            "data": [
+                1,
+                1,
+                1,
+                0,
+                11,
+                8,
+                18,
+                11,
+                18,
+                18,
+                9
+            ],
+            "cumulative": 9.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "46 Bd, Amphibian, Infection, Skin",
+            "data": [
+                4,
+                4,
+                5,
+                8,
+                5,
+                5,
+                7,
+                10,
+                15,
+                10,
+                9
+            ],
+            "cumulative": 4.0,
+            "relative_change": 0.9230769230769231
+        },
+        {
+            "label": "47 Demographic, Population Growth, Ipms, Population",
+            "data": [
+                5,
+                2,
+                7,
+                4,
+                8,
+                3,
+                4,
+                2,
+                5,
+                7,
+                4
+            ],
+            "cumulative": -4.0,
+            "relative_change": -0.8
+        },
+        {
+            "label": "48 Wolves, Wolf, Coyotes, Prey",
+            "data": [
+                4,
+                2,
+                2,
+                4,
+                6,
+                7,
+                6,
+                5,
+                10,
+                11,
+                11
+            ],
+            "cumulative": 5.0,
+            "relative_change": 1.25
+        },
+        {
+            "label": "49 Barcoding, Barcode, Dna, Barcodes",
+            "data": [
+                14,
+                6,
+                8,
+                8,
+                5,
+                5,
+                8,
+                8,
+                19,
+                8,
+                11
+            ],
+            "cumulative": -4.0,
+            "relative_change": -0.34285714285714286
+        },
+        {
+            "label": "5 Salmon, Trout, Fish, River",
+            "data": [
+                38,
+                26,
+                35,
+                38,
+                44,
+                40,
+                37,
+                35,
+                32,
+                30,
+                39
+            ],
+            "cumulative": 2.0,
+            "relative_change": 0.05940594059405941
+        },
+        {
+            "label": "50 Bacterial, Microbial, Bacterioplankton, Lake",
+            "data": [
+                4,
+                4,
+                6,
+                5,
+                9,
+                11,
+                22,
+                22,
+                16,
+                18,
+                15
+            ],
+            "cumulative": 12.0,
+            "relative_change": 3.272727272727273
+        },
+        {
+            "label": "51 Trout, Genetic, Salmon, River",
+            "data": [
+                17,
+                12,
+                8,
+                12,
+                9,
+                14,
+                13,
+                12,
+                11,
+                10,
+                5
+            ],
+            "cumulative": -5.0,
+            "relative_change": -0.38461538461538464
+        },
+        {
+            "label": "52 Groundwater, Rainfall, Water, River",
+            "data": [
+                1,
+                0,
+                2,
+                1,
+                3,
+                7,
+                5,
+                8,
+                29,
+                32,
+                17
+            ],
+            "cumulative": 17.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "53 Food Web, Web, Webs, Food Webs",
+            "data": [
+                10,
+                8,
+                7,
+                12,
+                12,
+                9,
+                13,
+                12,
+                11,
+                15,
+                11
+            ],
+            "cumulative": 2.0,
+            "relative_change": 0.2222222222222222
+        },
+        {
+            "label": "54 Disease, Trichoderma, Fusarium, Fungicides",
+            "data": [
+                1,
+                0,
+                0,
+                1,
+                1,
+                5,
+                11,
+                5,
+                23,
+                43,
+                19
+            ],
+            "cumulative": 19.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "55 Genetic, Snps, Differentiation, Genetic Structure",
+            "data": [
+                10,
+                8,
+                11,
+                11,
+                10,
+                12,
+                11,
+                19,
+                6,
+                8,
+                9
+            ],
+            "cumulative": -3.0,
+            "relative_change": -0.3
+        },
+        {
+            "label": "56 Pathogen, Resistance, Host, Pathogens",
+            "data": [
+                4,
+                6,
+                9,
+                11,
+                9,
+                6,
+                7,
+                13,
+                12,
+                5,
+                5
+            ],
+            "cumulative": 2.0,
+            "relative_change": 0.46153846153846156
+        },
+        {
+            "label": "57 Students, Online, Courses, Learning",
+            "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                23,
+                13,
+                9,
+                3,
+                2
+            ],
+            "cumulative": 2.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "58 Images, Deep Learning, Learning, Image",
+            "data": [
+                0,
+                0,
+                0,
+                0,
+                4,
+                12,
+                14,
+                20,
+                15,
+                22,
+                15
+            ],
+            "cumulative": 14.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "59 Medical, Health, Care, Medical Care",
+            "data": [
+                8,
+                9,
+                7,
+                14,
+                8,
+                11,
+                13,
+                17,
+                13,
+                7,
+                5
+            ],
+            "cumulative": -4.0,
+            "relative_change": -0.46153846153846156
+        },
+        {
+            "label": "6 Invasive, Invasion, Native, Alien",
+            "data": [
+                26,
+                36,
+                36,
+                37,
+                36,
+                36,
+                36,
+                56,
+                33,
+                44,
+                29
+            ],
+            "cumulative": 6.0,
+            "relative_change": 0.21176470588235294
+        },
+        {
+            "label": "60 Extracts, Extract, Antioxidant, Compounds",
+            "data": [
+                1,
+                1,
+                0,
+                1,
+                0,
+                2,
+                3,
+                2,
+                19,
+                13,
+                20
+            ],
+            "cumulative": 20.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "61 Forest, Regeneration, Woody, Tree",
+            "data": [
+                2,
+                1,
+                0,
+                1,
+                2,
+                3,
+                5,
+                4,
+                10,
+                14,
+                4
+            ],
+            "cumulative": 1.0,
+            "relative_change": 0.5
+        },
+        {
+            "label": "62 Heart, Heart Rate, Cardiovascular, Cardiovascular System",
+            "data": [
+                7,
+                7,
+                10,
+                9,
+                9,
+                6,
+                12,
+                10,
+                3,
+                2,
+                5
+            ],
+            "cumulative": 0.0,
+            "relative_change": 0.0
+        },
+        {
+            "label": "63 Telomere, Telomere Length, Telomeres, Length",
+            "data": [
+                0,
+                0,
+                2,
+                5,
+                1,
+                8,
+                3,
+                14,
+                6,
+                4,
+                3
+            ],
+            "cumulative": 1.0,
+            "relative_change": 1.5
+        },
+        {
+            "label": "64 Plumage, Coloration, Carotenoid, Color",
+            "data": [
+                4,
+                7,
+                8,
+                7,
+                7,
+                10,
+                15,
+                17,
+                9,
+                17,
+                9
+            ],
+            "cumulative": 5.0,
+            "relative_change": 1.0
+        },
+        {
+            "label": "65 Suitable, Distribution, Climate, Suitable Habitat",
+            "data": [
+                1,
+                1,
+                3,
+                0,
+                2,
+                3,
+                4,
+                11,
+                15,
+                12,
+                21
+            ],
+            "cumulative": 20.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "66 Productivity, Tree, Diversity, Forests",
+            "data": [
+                8,
+                9,
+                7,
+                11,
+                6,
+                11,
+                15,
+                9,
+                11,
+                14,
+                8
+            ],
+            "cumulative": 4.0,
+            "relative_change": 0.5714285714285714
+        },
+        {
+            "label": "67 Seagrass, Eelgrass, Meadows, Seagrasses",
+            "data": [
+                2,
+                2,
+                1,
+                1,
+                2,
+                2,
+                4,
+                2,
+                3,
+                11,
+                7
+            ],
+            "cumulative": 1.0,
+            "relative_change": 0.3
+        },
+        {
+            "label": "68 Camera, Camera Traps, Camera Trap, Traps",
+            "data": [
+                2,
+                4,
+                5,
+                11,
+                10,
+                7,
+                14,
+                15,
+                16,
+                11,
+                13
+            ],
+            "cumulative": 9.0,
+            "relative_change": 2.6999999999999997
+        },
+        {
+            "label": "69 Occupational, Workers, Working Conditions, Working",
+            "data": [
+                0,
+                3,
+                2,
+                5,
+                0,
+                17,
+                66,
+                1,
+                2,
+                2,
+                0
+            ],
+            "cumulative": -2.0,
+            "relative_change": -1.2
+        },
+        {
+            "label": "7 Remote Sensing, Sensing, Remote, Spectral",
+            "data": [
+                11,
+                12,
+                14,
+                25,
+                31,
+                33,
+                42,
+                50,
+                65,
+                72,
+                39
+            ],
+            "cumulative": 34.0,
+            "relative_change": 3.642857142857143
+        },
+        {
+            "label": "70 Waste, Concrete, Cement, Materials",
+            "data": [
+                0,
+                1,
+                0,
+                1,
+                6,
+                12,
+                9,
+                12,
+                14,
+                17,
+                6
+            ],
+            "cumulative": 6.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "71 Peatland, Peatlands, Sphagnum, Peat",
+            "data": [
+                0,
+                2,
+                7,
+                3,
+                3,
+                2,
+                8,
+                4,
+                5,
+                6,
+                3
+            ],
+            "cumulative": 1.0,
+            "relative_change": 0.75
+        },
+        {
+            "label": "72 Camera, Duiker, Mammal, Park",
+            "data": [
+                2,
+                3,
+                3,
+                5,
+                7,
+                3,
+                7,
+                5,
+                17,
+                21,
+                16
+            ],
+            "cumulative": 13.0,
+            "relative_change": 4.875
+        },
+        {
+            "label": "73 Dissimilarity, Diversity, Functional, Trait",
+            "data": [
+                4,
+                9,
+                10,
+                9,
+                3,
+                8,
+                10,
+                13,
+                4,
+                8,
+                6
+            ],
+            "cumulative": -1.0,
+            "relative_change": -0.15
+        },
+        {
+            "label": "74 Chloroplast, Genetic, China, Quaternary",
+            "data": [
+                5,
+                6,
+                8,
+                8,
+                8,
+                14,
+                8,
+                8,
+                13,
+                11,
+                9
+            ],
+            "cumulative": 2.0,
+            "relative_change": 0.3333333333333333
+        },
+        {
+            "label": "75 Drought, Tree, Growth, Tree Growth",
+            "data": [
+                8,
+                5,
+                14,
+                11,
+                7,
+                5,
+                7,
+                13,
+                14,
+                10,
+                8
+            ],
+            "cumulative": 5.0,
+            "relative_change": 0.9375
+        },
+        {
+            "label": "76 Coexistence, Competition, Competitive, Species Coexistence",
+            "data": [
+                7,
+                5,
+                4,
+                8,
+                14,
+                10,
+                9,
+                13,
+                13,
+                13,
+                4
+            ],
+            "cumulative": 0.0,
+            "relative_change": 0.0
+        },
+        {
+            "label": "77 Rhizosphere, Bacterial, Microbiome, Microbial",
+            "data": [
+                1,
+                1,
+                2,
+                4,
+                0,
+                9,
+                17,
+                16,
+                15,
+                17,
+                19
+            ],
+            "cumulative": 18.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "78 Germination, Seed, Dormancy, Seeds",
+            "data": [
+                5,
+                3,
+                5,
+                5,
+                8,
+                6,
+                9,
+                7,
+                8,
+                4,
+                7
+            ],
+            "cumulative": 6.0,
+            "relative_change": 2.0
+        },
+        {
+            "label": "79 Phytoplankton, Bloom, Phytoplankton Community, Chlorophyll",
+            "data": [
+                3,
+                2,
+                2,
+                0,
+                2,
+                3,
+                5,
+                9,
+                18,
+                17,
+                15
+            ],
+            "cumulative": 14.0,
+            "relative_change": 7.0
+        },
+        {
+            "label": "8 Ha, Yield, Kg, Kg Ha",
+            "data": [
+                1,
+                2,
+                0,
+                6,
+                3,
+                13,
+                16,
+                10,
+                70,
+                148,
+                93
+            ],
+            "cumulative": 93.0,
+            "relative_change": 10.0
+        },
+        {
+            "label": "80 Phylogenetic, Diversification, Evolution, Evolutionary",
+            "data": [
+                9,
+                10,
+                13,
+                6,
+                9,
+                6,
+                7,
+                7,
+                6,
+                10,
+                8
+            ],
+            "cumulative": 0.0,
+            "relative_change": 0.0
+        },
+        {
+            "label": "9 Seed, Seeds, Dispersal, Seed Dispersal",
+            "data": [
+                23,
+                24,
+                29,
+                22,
+                24,
+                23,
+                24,
+                22,
+                28,
+                25,
+                23
+            ],
+            "cumulative": -2.0,
+            "relative_change": -0.08333333333333333
+        }
+    ]
+}
