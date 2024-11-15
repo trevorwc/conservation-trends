@@ -70,10 +70,6 @@
             <p>
                 The top 10 topics can be visualized in the histogram below. 
             </p>
-            <p>
-                Some notable trends stick out, including the increase in reserach about fires, agricultural yields, 
-                and pollinators. 
-            </p>
         </div>
         <!-- Top 10 Popular Topics Bar Chart container -->
         <div class="container">
@@ -81,12 +77,15 @@
         </div>
         <div class="row justify-content-start" style="max-width: 800px; margin: auto; text-align: justify;">
             <p>
-                Still, the large differences in total count between different topics can obscure trends, so 
-                it might be more informative to look at a single topic over time. We visualized those trends 
-                in the following interactive line chart. 
+                Some viewers might notice that there are actually 11 topics plotted- this is because 
+                the gut microbiome and sperm are both tied for 10th place in terms of total count. 
+                Some notable trends stick out, including the increase in reserach about fires, agricultural yields, 
+                and pollinators. Some of the topics in this list of the most popular are likely familiar to those
+                that follow the zietgeist of popular science, while others reflect long-running disciplinary interests. 
             </p>
             <p>
-                To look at the trend in a specific topic over time, select a topic below. 
+                But what about the rest of the topics? 
+                We visualized the yearly trends of all 80 topics in the following interactive line chart. 
             </p>
         </div>
         <!-- Interactive Dropdown and Line Chart Section -->
@@ -99,12 +98,14 @@
         </div>
         <div class="row justify-content-start" style="max-width: 800px; margin: auto; text-align: justify;">
             <p>
-                We were also interested in seeing which topics have become relative more or less popular throughout the years.
-                Therefore, we calculated the relative change in the number of articles published on a toppic relative to the
-                average of the first three years of the dataset.
+                The previous charts give a good understanding of trends in science in absolute terms, but which
+                topics have changed the most in relative terms? This metric can give a better idea of which 
+                topics have become relatively more or less popular, versus those that have long been mainstream.
             </p>
-            <p>In order to allow for easy visual comparison, topics that have increased or decreased by more than 10x 
-                have been truncated. 
+            <p>
+                The relative change in each topic's popularity compared to its average from 2013-2015 is plotted
+                below in an interactive bar chart that allows users to compare as many of few topics as are of interest.
+                
             </p>
         </div>
         <canvas id="relativeChangeChart"></canvas>
@@ -117,8 +118,14 @@
             <p>
                 We see that the five topics that have seemingly fallen out of favor are related to working conditions,
                 demography, queens/workers, health care, and the genetics of salmon and trout. 
-                This points to a potenital limitation of the model, as the meaning of queens, workers, and colony most
+            </p>
+            <p>
+                Interstingly, these "out of favor" topics may point to a limitation of the model's ability to
+                understand the meaning of words given context, or could represent overly narrow categories. 
+                For example, the meaning of queens, workers, and colony most
                 likely relate to pollinators, but these articles were not included in the pollinators category. 
+                It is plausible that this research represents a distinct subject, but without additional
+                manual analysis, the model is unable to differntiate these possibilities. 
             </p>
         </div>
     </div>

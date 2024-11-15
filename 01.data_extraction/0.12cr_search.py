@@ -7,7 +7,7 @@ import json
 
 # === Helper Functions =======
 cr = Crossref()
-"""
+
 # Get all articles from GCB
 res = cr.works(cursor = "*", 
                limit = 100, 
@@ -61,4 +61,4 @@ cons_prompt = [item for batch in res for item in batch['message']['items']]
 
 with open('conservation_articles.json', 'w') as f:
     json.dump(cons_prompt, f, indent=4)
-"""
+

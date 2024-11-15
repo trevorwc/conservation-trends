@@ -226,7 +226,10 @@ fetch('data/pretty_change.json')
         indexAxis: 'y',
         responsive: true,
         scales: {
-          x: { beginAtZero: true },
+          x: { 
+            beginAtZero: true,
+            text: 'Relative Change'
+           },
           y: { beginAtZero: true }
         },
         plugins: {
