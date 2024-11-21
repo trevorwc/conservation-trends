@@ -128,6 +128,42 @@
                 manual analysis, the model is unable to differntiate these possibilities. 
             </p>
         </div>
+        <div class="text-center">
+            <p class="lead mb-4"> Innovation in science </p>
+        </div>
+        <div class="row justify-content-start" style="max-width: 800px; margin: auto; text-align: justify;">
+            <p>
+                In addition to identifying the key topics and their changes over time, a key question is whether 
+                there has been any trend in innovation in conservation science. There are many ways that innovation 
+                can be measured, but we were specifically interested in how natural language processing can be used 
+                to measure innovation from the abstract. This was partially due to the fact that other methods,
+                such as analyzing trends in citations, would not be possible as this is not included in this dataset. 
+            </p>
+            <!--Plot of innovation over time-->
+            <canvas id="innoChart" width="400" height="200"></canvas>
+            <script src="script.js"></script>
+            <!--Plot of subject-level innovation over time-->
+            <p>
+                In additon to the "innovation" sentiment analysis, we explored semantic complexity as a measure 
+                of scientific complexity. This is undoubtedly an imperfect measure- as one mark of a good scientist 
+                is finding simplicity in complexity- but is based on the reasoning that more complex language will be 
+                necessary to write about more complex topics. 
+            </p>
+            <!-- Plot of readability over time -->
+            <canvas id="fkgChart" width="400" height="200"></canvas>
+            <script src="script.js"></script>
+            <p>
+                These two metrics provide seemingly contradictory results. In order to test the hypothesis
+                that more innovative scientists may simply be using simpler language, we tested 
+                regressed innovation against grade. The two were significantly positively related, indicating 
+                that more innovative studies tended to use more complex language.
+            </p>
+            <p>
+                Because our two different methods found different results regarding the change in innovation,
+                we are unable to come to difinitive conclusions at this time. It is possible that approaches
+                outside of NLP, such as citation analysis, might be necessary. 
+            </p>
+        </div>
     </div>
     <!-- Load app.js -->
     <script src="app.js"></script>

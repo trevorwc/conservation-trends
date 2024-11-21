@@ -251,3 +251,104 @@ fetch('data/pretty_change.json')
     }
   })
   .catch(error => console.error('Error loading JSON:', error));
+
+
+  fetch('data/pretty_inno_year.json')
+  .then(response => response.json())
+  .then(data => {
+    const ctx = document.getElementById('innoChart').getContext('2d');
+    // Create the line chart
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: data.labels, // x-axis labels (e.g., years)
+        datasets: [
+          {
+            label: "Innovation Score Over Years", // Dataset label
+            data: data.datasets[0].data, // y-axis data points
+            borderColor: "rgba(75, 192, 192, 1)", // Line color
+            backgroundColor: "rgba(75, 192, 192, 0.2)", // Optional fill under the line
+            borderWidth: 2, // Line thickness
+            fill: false // No area fill under the line
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Year', // X-axis title
+              font: { size: 14, weight: 'bold' },
+              padding: { top: 10 }
+            }
+          },
+          y: {
+            beginAtZero: false,
+            title: {
+              display: true,
+              text: 'Innovation Score', // Y-axis title
+              font: { size: 14, weight: 'bold' },
+              padding: { bottom: 10 }
+            }
+          }
+        },
+        plugins: {
+          legend: { display: true } // Show legend
+        }
+      }
+    });
+    })
+    .catch(error => console.error('Error loading JSON:', error));
+
+
+
+  fetch('data/complexity_trends.json')
+  .then(response => response.json())
+  .then(data => {
+    const ctx = document.getElementById('fkgChart').getContext('2d');
+    // Create the line chart
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: data.labels, // x-axis labels (e.g., years)
+        datasets: [
+          {
+            label: "Complexity (Flesch-Kincaid Grade)", // Dataset label
+            data: data.datasets[0].data, // y-axis data points
+            borderColor: "rgba(75, 192, 192, 1)", // Line color
+            backgroundColor: "rgba(75, 192, 192, 0.2)", // Optional fill under the line
+            borderWidth: 2, // Line thickness
+            fill: false // No area fill under the line
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Year', // X-axis title
+              font: { size: 14, weight: 'bold' },
+              padding: { top: 10 }
+            }
+          },
+          y: {
+            beginAtZero: false,
+            title: {
+              display: true,
+              text: 'Complexity (Flesch-Kincaid Grade)', // Y-axis title
+              font: { size: 14, weight: 'bold' },
+              padding: { bottom: 10 }
+            }
+          }
+        },
+        plugins: {
+          legend: { display: true } // Show legend
+        }
+      }
+    });
+    })
+    .catch(error => console.error('Error loading JSON:', error));
