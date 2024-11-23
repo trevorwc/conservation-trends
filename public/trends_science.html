@@ -144,24 +144,34 @@
             <script src="script.js"></script>
             <!--Plot of subject-level innovation over time-->
             <p>
-                In additon to the "innovation" sentiment analysis, we explored semantic complexity as a measure 
-                of scientific complexity. This is undoubtedly an imperfect measure- as one mark of a good scientist 
-                is finding simplicity in complexity- but is based on the reasoning that more complex language will be 
-                necessary to write about more complex topics. 
+                This analysis demonstrates that conservation science has become more innovative. 
+                But a more fundamental philosophical question remains: how important is innovative science if it remains in narrowly read journals?
+            </p>
+            <p>
+                Scientific journals are often derided as the pinnacle of ivory tower insularity, partially
+                because the modes of communication employed within their pages is jargon-laden, idiosyncratic, and difficult
+                for a general audience to follow. 
+            </p>
+            <p>
+                Therefore, making science digestible to those outside of a specific field would seem to be an 
+                important first step for translating research into policy and action by stakeholders. 
+                In order to understand whether conservation science has become more or less accessible, for each 
+                abstract we computed the Flesch-Kincaid grade level- which translates readibility score to 
+                the US grade system. For example, something that recieves a 14 would be considered 
+                at the level of a college sophomore. The score is calculated as:
+            </p>
+            <p>
+                score = 0.39*(total words / total sentences) + 11.8*(total syllables / total words) - 15.59
             </p>
             <!-- Plot of readability over time -->
             <canvas id="fkgChart" width="400" height="200"></canvas>
             <script src="script.js"></script>
             <p>
-                These two metrics provide seemingly contradictory results. In order to test the hypothesis
-                that more innovative scientists may simply be using simpler language, we tested 
-                regressed innovation against grade. The two were significantly positively related, indicating 
-                that more innovative studies tended to use more complex language.
+                Clearly,  these results show that, at the least the abstracts of scientific papers
+                have become more readable over the past decade. 
             </p>
             <p>
-                Because our two different methods found different results regarding the change in innovation,
-                we are unable to come to difinitive conclusions at this time. It is possible that approaches
-                outside of NLP, such as citation analysis, might be necessary. 
+                para
             </p>
         </div>
     </div>
