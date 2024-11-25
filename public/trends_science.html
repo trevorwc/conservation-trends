@@ -45,10 +45,17 @@
             <img src="images/sci.png" alt="Conservation Image" class="img-fluid" style="max-width: 100%; height: auto;">
         </div> 
         <div class="text-center">
-            <p class="lead mb-4">Science is key to combatting the biodiversity crisis </p>
+            <p class="lead mb-4"> Understanding trends in conservation research topics </p>
         </div>
         <!-- Text-->
         <div class="row justify-content-start" style="max-width: 800px; margin: auto; text-align: justify;">
+            <p>
+                Science has been essential for our understanding of the current extent of the biodiversity crisis,
+                and it will be essential if we are to halt the destruction. 
+                Clearly, <strong>innovative solutions are needed for a problem with such diffuse and varied causes. </strong>
+                Unique research methods have the potential to come to innovative and impactful conclusions,
+                making innovative science investigating pressing topics a key priority for conservation. 
+            </p>
             <p>
                 The field of conservation science has itself become increasingly diverse. 
                 In addition to the canonical conservationists collecting samples in remote landscapes,
@@ -56,39 +63,60 @@
                 power and techniques means that scientists have an increasing number of tools at their disposal.
             </p>
             <p>
-                We assessed yearly trends the topics of scientific papers through an analysis of their abstracts. After
-                accessing 81,958 journal abstracts related to the keyword "conservation" since 2013, we filtered to those
+                Therefore, we <strong> analyzed trends in the topics of scientific papers published between 2013 and 2024.</strong>
+                In order to do this, we used the BERTopic model which weights both term frequenccy and inverse document frequency, 
+                capturing both important words that are used often throughout the document and important words that are used rarely.
+                We used the 'all-MiniLM-L6-v2' embedding model acecssed through Python's sentence_transformer package and scikit-learn's 
+                CountVectorizer model. The model outputs the predicted topic of each abstract, as well as the probability that the 
+                article belongs to the classified topic. The topics themselves consist of four key words/ phrases which can provide insight
+                into the specific aspect of a larger topic that a study is investigatig.
+            </p>
+            <p>
+                We assessed yearly trends the topics of scientific papers through an analysis of their abstracts. <strong>We accessed 81,958
+                 journal abstracts related to the keyword "conservation" since 2013 through the Crossref API </strong> accessed through
+                 Python's habanero package. We then filtered to those that were 
                 published in 85 "disciplinary journals," which we defined as those with more than 100 articles related to conservation,
-                leaving us with 68,065 abstracts. The model classified the abstracts into 667 topics. Nearly half of the abstracts fit
-                the "intercept" term that can be thought of as unclassified or too difficult to classify. 
+                leaving us with 68,065 abstracts. This was based on the assumption that those with innovative work would
+                choose to publish it in a discipline-specific journal or high-impact broad readership journal that 
+                often publishes on the subject. We <strong>classified each abstract into 667 topics </strong>, which were discovered by the 
+                BERTopic model from the unlabeled abstracts. Nearly half of the abstracts fit
+                the "intercept" term that can be thought of as unclassified or too difficult to classify and were not included in this analysis. 
             </p>
             <p>
-                In order to ensure that we were only accessing the highest quality data, we only performed subsequent 
-                analysis on those topics that had more than 100 articles, then filtered to those with more than 50% probability 
-                of being in their assigned class. This left us with 13,661 abstracts remaining. 
+                In order to ensure that we were only accessing the highest quality data, we <strong>only performed subsequent 
+                analysis on those topics that had more than 100 articles, then filtered to those with more than 50% probability </strong>
+                of being in their assigned class. This left us with <strong>13,661 abstracts </strong> remaining. 
             </p>
             <p>
-                The top 10 topics can be visualized in the histogram below. 
+                One of the primary questions we had was <strong> What are the most studied topics in conservation science?</strong>
+                The top 10 topics, defined by total articles published 
+                on that topic from 2013-2024, can be visualized in the histogram below. 
             </p>
         </div>
+        <br>
+        <br>
         <!-- Top 10 Popular Topics Bar Chart container -->
         <div class="container">
             <canvas id="popular10Chart" width="400" height="200"></canvas>
         </div>
+        <br>
+        <br>
         <div class="row justify-content-start" style="max-width: 800px; margin: auto; text-align: justify;">
             <p>
                 Some viewers might notice that there are actually 11 topics plotted- this is because 
                 the gut microbiome and sperm are both tied for 10th place in terms of total count. 
-                Some notable trends stick out, including the increase in reserach about fires, agricultural yields, 
-                and pollinators. Some of the topics in this list of the most popular are likely familiar to those
+                Some notable trends stick out, including the <strong> increase in reserach about fires, agricultural yields, 
+                and pollinators. </strong> Some of the topics in this list of the most popular are likely familiar to those
                 that follow the zietgeist of popular science, while others reflect long-running disciplinary interests. 
             </p>
             <p>
                 But what about the rest of the topics? 
-                We visualized the yearly trends of all 80 topics in the following interactive line chart. 
+                We visualized the <strong> yearly trends of all 80 topics </strong> in the following interactive line chart. 
             </p>
         </div>
         <!-- Interactive Dropdown and Line Chart Section -->
+        <br>
+        <br>
         <div class="container mt-5">
             <label for="labelSelect" class="form-label"> Select a topic:</label>
             <select id="labelSelect" class="form-control mb-3">
@@ -96,24 +124,34 @@
             </select>
             <canvas id="lineChart" width="400" height="200"></canvas>
         </div>
+        <br>
+        <br>
         <div class="row justify-content-start" style="max-width: 800px; margin: auto; text-align: justify;">
             <p>
-                The previous charts give a good understanding of trends in science in absolute terms, but which
-                topics have changed the most in relative terms? This metric can give a better idea of which 
+                This analysis is able to show how the popularity of different topics
+                has changed in absolute terms, but we were interested in exploring 
+                <strong>
+                    which topics have seen the largest relative increases and decreases in popularity?
+                </strong> 
+                This metric can give a better idea of which 
                 topics have become relatively more or less popular, versus those that have long been mainstream.
             </p>
             <p>
-                The relative change in each topic's popularity compared to its average from 2013-2015 is plotted
+                The relative change in each topic's popularity in 2021-2023 compared to its average from 2013-2015 is plotted
                 below in an interactive bar chart that allows users to compare as many of few topics as are of interest.
-                
+                Topics that experienced very large increases or decreases were truncated to 10x in order to aid visualization. 
             </p>
         </div>
-        <canvas id="relativeChangeChart"></canvas>
+        <br>
+        <br>
+        <canvas id="relativeChangeChart" ></canvas>
         <div id="multiLabelDropdownContainer", style = "max-height: 200px; max-width: 800px; overflow-y: auto; border: 1px solid #ccc;  padding: 5px;">
             <label for="searchInput">Search Labels:</label>
               <input type="text" id="searchInput" placeholder="Type to search...">
             <div id="multiLabelDropdown"></div>
         </div>
+        <br>
+        <br>
         <div class="row justify-content-start" style="max-width: 800px; margin: auto; text-align: justify;">
             <p>
                 We see that the five topics that have seemingly fallen out of favor are related to working conditions,
@@ -129,22 +167,39 @@
             </p>
         </div>
         <div class="text-center">
-            <p class="lead mb-4"> Innovation in science </p>
+            <p class="lead mb-4"> Measuring innovation in science </p>
         </div>
         <div class="row justify-content-start" style="max-width: 800px; margin: auto; text-align: justify;">
             <p>
-                In addition to identifying the key topics and their changes over time, a key question is whether 
-                there has been any trend in innovation in conservation science. There are many ways that innovation 
-                can be measured, but we were specifically interested in how natural language processing can be used 
-                to measure innovation from the abstract. This was partially due to the fact that other methods,
+                In addition to identifying the key topics and their changes over time, we wondered: <strong>has science become more or less innovative
+                over the past decade? </strong> There are many ways that innovation 
+                can be measured, but in this application we were specifically interested 
+                in exploring the potential for natural language processing to be used to measure innovation. 
+                This was partially due to the fact that other methods,
                 such as analyzing trends in citations, would not be possible as this is not included in this dataset. 
             </p>
+            <p>
+                In order to do this, <strong> we used the SentimentIntensityAnalyzer available through the vaderSentiment package. </strong>
+                This approach quantifies the sentiment of a piece of text by assigning relative polarity to words, accounting 
+                for their meaning in context, and being able to handle different valences within the same document. 
+                As we were interested in the relative innovation of a paper rather than its positive vs. negative polarity, 
+                <strong>we created a custom lexicon of words that indicate innovation </strong> (e.g. propose, discover, breakthrough) and words 
+                that indicate stagnation (e.g. modest, marginal, replicated). We assigned all innovative words a weight of 1,
+                and all stagnation words a weight of -1. Future work should prioritize a rigorous weighting of these words 
+                based on their relative innovation/ stagnation, as has been developed for sentiment polarity. However,
+                no such resource currently exists for innovation/ novelty scores. 
+            </p>
+            <br>
+            <br>
             <!--Plot of innovation over time-->
             <canvas id="innoChart" width="400" height="200"></canvas>
-            <script src="script.js"></script>
+            <br>
+            <br>
             <!--Plot of subject-level innovation over time-->
             <p>
-                This analysis demonstrates that conservation science has become more innovative. 
+                As is shown in the above chart, the past decade has seen a statistically significant increase in average innovation (p = 0.039). 
+            </p>
+            <p>
                 But a more fundamental philosophical question remains: how important is innovative science if it remains in narrowly read journals?
             </p>
             <p>
@@ -155,6 +210,7 @@
             <p>
                 Therefore, making science digestible to those outside of a specific field would seem to be an 
                 important first step for translating research into policy and action by stakeholders. 
+                We ask: <strong> has conservation science become more or less accessible?</strong>
                 In order to understand whether conservation science has become more or less accessible, for each 
                 abstract we computed the Flesch-Kincaid grade level- which translates readibility score to 
                 the US grade system. For example, something that recieves a 14 would be considered 
@@ -163,15 +219,35 @@
             <p>
                 score = 0.39*(total words / total sentences) + 11.8*(total syllables / total words) - 15.59
             </p>
+            <br>
+            <br>
             <!-- Plot of readability over time -->
             <canvas id="fkgChart" width="400" height="200"></canvas>
             <script src="script.js"></script>
+            <br>
+            <br>
             <p>
-                Clearly,  these results show that, at the least the abstracts of scientific papers
-                have become more readable over the past decade. 
+                These results demonstrate a <strong> statistically significant decrease in average Flesch-Kincaid grade </strong> (p = 0.003), 
+                which indicates increasing readability. In fact, from the highest average grade level of 15.3 in 2016 to the 
+                lowest of 14.3, we see scientists modifying their language to the extent that the reading level is reduced 
+                by an entire year of higher education. A few limitations of this grade level approach relevant to science, should be noted,
+                specifically that this index is based upon word and sentence structure, and therefore cannot account for 
+                phenomena like jargon. Accounting for the vast corpus of jargon across all conservation disciplines is out of scope of this 
+                analysis, but remains a topic ripe for future work. 
             </p>
+        </div>
+        <div class="text-center">
+            <p class="lead mb-4"> Conclusions </p>
+        </div>
+        <div class="row justify-content-start" style="max-width: 800px; margin: auto; text-align: justify;">
             <p>
-                para
+                Overall, these results show increasing interest in water and air pollution, ecology, energy, and agriculture.
+                We also find that conservation <strong>science has become more innovative over the past decade. </strong>
+                At the same time, <strong>the language employed by scientists has become more more accessible. </strong>
+                Taken together, these results would suggest a <strong>significant opportunity for policy innovation </strong> in the topics that
+                researchers have determined to be the most important and pressing. The next portion of this project
+                looks at the most popular topics in conservation policy to determine the extent to which the 
+                priorities of scientists and policy makers align.  
             </p>
         </div>
     </div>
